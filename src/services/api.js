@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000/card?card=arquivos',
+    baseURL: process.env.REACT_APP_API_URL
       });
 
 
