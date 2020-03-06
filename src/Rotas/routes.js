@@ -18,7 +18,8 @@ import CadastroRealizado from'./../views/Confirm/CadastroRealizado'
 import DoacoesPerfil from './../views/Perfil/DoacoesPerfil'
 import InteressesPerfil from './../views/Perfil/InteressesPerfil'
 import ConfigPerfil from './../views/Perfil/ConfigPerfil'
-import Chat from './../views/chat'
+import Chat from './../views/NewChat'
+import Adm from './../views/adm'
 import BarraDeBusca from './../componentes/BarraDeBusca'
 
 const PrivateRoute = ({component: Component,...rest}) =>(
@@ -51,6 +52,7 @@ const Routes = () => (
         <PrivateRoute exact path="/perfil/config" component={ConfigPerfil}/> 
         <PrivateRoute exact path="/home/suasdoacoes" component={SuasDoacoes}/> 
         <PrivateRoute exact path="/chat" component={Chat}/> 
+        <PrivateRoute exact path="/adm" component={Adm}/> 
         
 
         <PrivateRoute exact path="/asd" component={() => <h1>Você está logado</h1> }/>
