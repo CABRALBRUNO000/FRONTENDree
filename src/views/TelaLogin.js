@@ -10,7 +10,7 @@ export default function TelaLogin() {
         <Figure>
             <ImgUSer alt="fotoUserPerfil" src={UserPerfil}/>
         </Figure>
-        <Form action="/login" method="post">
+        <Form action="" method="post">
             <DivUserPass>
                 <InputLogin type="email" placeholder="Login" name="emaillogin" id="emaillogin"/>
             </DivUserPass>
@@ -19,7 +19,7 @@ export default function TelaLogin() {
                 <InputLogin type="password" placeholder="Senha"name="password" id="password"/>
             </DivUserPass>
             <Buttons>
-                <ButtonLogin type="submit">{/* <ALogin href="/private"> */}Login{/* </ALogin> */}</ButtonLogin>
+                <ALogin href="/private"> Login </ALogin> 
                 
                 <Paragrafo>Não possui conta?</Paragrafo>
                 <ButtonCadastro><AA href="/cadastro">Cadastre-se</AA></ButtonCadastro>
@@ -80,25 +80,24 @@ const InputLogin = styled.input`
 `;
 
 
-// const ALogin = styled.a`
-//     margin:40px;
-//     min-width: 150px;
-//     min-height: 50px;
+const ALogin = styled.a`
+margin:40px;
+min-width: 150px;
+border: solid #F2C94C;
+border-radius:5px;
+cursor: pointer;
+text-align:center;
+font-size: 15pt;
+font-weight:bolder;
+color: #F2C94C;
 
-//     cursor: pointer;
 
-//     font-size: 13px;
-//     font-weight:bolder;
-
-//     color: #F2C94C;
-
-//         &:hover{
-//     transition: 1s;
-//     border: none;
-
-//     color:white;
-// }
-// `;
+    &:hover{
+transition: 0.4s;
+background: #F2C94C;
+color:white;
+}
+`;
 
 
 
